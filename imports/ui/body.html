@@ -3,12 +3,14 @@
     <header>
     {{> loginButtons}}
         
-      <h1>Your Schedule  ({{incompleteCount}} task left)</h1>
-        
     <label class="hide-completed">
         <input type="checkbox" />
         Hide Completed Tasks
-      </label>
+    </label>
+        
+      <h1>Your Schedule  ({{incompleteCount}} task left)</h1>
+        
+
         
         
         {{#if currentUser}}
@@ -19,7 +21,7 @@
         
     </header>
  
-    <ul>
+    <ul class="list-unstyled">
       {{#each tasks}}
         {{> task}}
       {{/each}}

@@ -1,39 +1,76 @@
-/* CSS declarations go here */
+*/ CSS declarations go here */
+:root {
+  --logo-font: 'Roboto Mono', monospace;
+  --main-font: 'Lato', sans-serif;
+  --header-font: 'Lato', sans-serif;
+  --meta-font: 'Roboto Mono', monospace;
+  --main-color: #D32F2F;
+  --pale-color: #FFEBEE;
+  --border-color: #EF9A9A;
+  --text-color: #222222;
+  --inverse-text-color: white;
+}
+
 body {
-  font-family: sans-serif;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
+  font-family: var(--main-font);
+  font-weight: 300;
+  line-height: 1.45;
+  color: var(--text-color);
+  padding: 1em;
 }
  
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  min-height: 100%;
+
 }
  
 header {
-  padding: 20px 15px 15px 15px;
-  position: relative;
+
 }
  
 #login-buttons {
   display: block;
 }
  
+
 h1 {
-  font-size: 1.5em;
-  margin: 0;
-  margin-bottom: 10px;
-  display: inline-block;
+	font-size: 5.06em;
+	line-height: 1.28em;
+	padding-top: 0.296em;
+	margin-bottom: 0.0247em;
+    display: inline-block;
   margin-right: 1em;
 }
+
+h2 {
+	font-size: 3.38em;
+	line-height: 1.44em;
+	padding-top: 0.389em;
+	margin-bottom: 0.0926em;
+}
+
+h3 {
+	font-size: 2.25em;
+	line-height: 1.44em;
+	padding-top: 0.389em;
+	margin-bottom: 0.333em;
+}
+
+h4 {
+	font-size: 1.50em;
+	line-height: 1.08em;
+	padding-top: 0.208em;
+	margin-bottom: 0.875em;
+}
+
+p {
+	font-size: 1.00em;
+	line-height: 1.63em;
+	padding-top: 0.500em;
+	margin-bottom: 1.13em;
+}
+
  
+
 form {
   margin-top: 10px;
   margin-bottom: -10px;
@@ -42,7 +79,7 @@ form {
  
 .new-task input {
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 1em 0;
   background: transparent;
   border: none;
   width: 100%;
@@ -55,8 +92,7 @@ form {
 }
  
 ul {
-  margin: 0;
-  padding: 0;
+
 }
  
 .delete {
@@ -94,19 +130,4 @@ header .hide-completed {
  
 .toggle-private {
   margin-left: 5px;
-}
- 
-@media (max-width: 600px) {
-  li {
-    padding: 12px 15px;
-  }
- 
-  .search {
-    width: 150px;
-    clear: both;
-  }
- 
-  .new-task input {
-    padding-bottom: 5px;
-  }
 }
