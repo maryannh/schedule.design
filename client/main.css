@@ -26,6 +26,11 @@ body {
 header {
 
 }
+
+.logo {
+  font-family: var(--logo-font);
+  font-size: 1.5em;
+}
  
 #login-buttons {
   display: block;
