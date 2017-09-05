@@ -1,22 +1,16 @@
-*/ CSS declarations go here */
-:root {
-  --logo-font: 'Roboto Mono', monospace;
-  --main-font: 'Lato', sans-serif;
-  --header-font: 'Lato', sans-serif;
-  --meta-font: 'Roboto Mono', monospace;
-  --main-color: #D32F2F;
-  --pale-color: #FFEBEE;
-  --border-color: #EF9A9A;
-  --text-color: #222222;
-  --inverse-text-color: white;
+/* CSS declarations go here */
+
+html {
+ 
+    
 }
 
 body {
-  font-family: var(--main-font);
-  font-weight: 300;
   line-height: 1.45;
-  color: var(--text-color);
   padding: 1em;
+ font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgba(0,0,0,0.8);
 }
  
 .container {
@@ -27,15 +21,29 @@ header {
 
 }
 
-.logo {
-  font-family: var(--logo-font);
-  font-size: 1.5em;
+h1, h2, h3, h4, h5 {
+   font-family: 'Roboto', sans-serif;
+}
+
+h1.logo {
+font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+}
+
+.logo a:link {
+    color: black;
 }
  
 #login-buttons {
   display: block;
 }
- 
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+   background-color: rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3); 
+    font-family: 'Roboto', sans-serif;
+}
+
 
 h1 {
 	font-size: 5.06em;
@@ -77,19 +85,23 @@ p {
  
 
 form {
-  margin-top: 10px;
-  margin-bottom: -10px;
+  margin-top: 1em;
+    font-size: 1.00em;
+  margin-bottom: -1em;
   position: relative;
+    font-family: 'Roboto', sans-serif;
 }
  
 .new-task input {
   box-sizing: border-box;
-  padding: 1em 0;
-  background: transparent;
+  padding: 0.5em;
   border: none;
   width: 100%;
   padding-right: 80px;
-  font-size: 1em;
+    background-color: rgba(0,0,0,0.1);
+  font-size: 2em;
+ margin-bottom: 1.13em;
+    font-family: 'Roboto', sans-serif;
 }
  
 .new-task input:focus{
@@ -97,42 +109,41 @@ form {
 }
  
 ul {
-
 }
  
 .delete {
-  float: right;
   font-weight: bold;
   background: none;
   font-size: 1em;
   border: none;
   position: relative;
+    margin-right: 0.25em;
 }
  
 li {
-  position: relative;
-  list-style: none;
-  padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.50em;
 }
  
 li .text {
-  margin-left: 10px;
-}
- 
-li.checked {
+  margin-left: 0.5em;
 }
  
 li.checked .text {
   text-decoration: line-through;
 }
  
-li.private {
-}
- 
 header .hide-completed {
   float: right;
+    font-family: 'Roboto', sans-serif;
 }
- 
-.toggle-private {
-  margin-left: 5px;
+
+.hide-completed input[type=checkbox] {
+            vertical-align: top;
+    margin-top: 0.2em;
+}
+
+input.toggle-checked[type=checkbox] {
+    vertical-align: top;
+    margin-top: 0.5em;
 }
