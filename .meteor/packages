@@ -18,9 +18,9 @@ ecmascript@0.8.1              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.2.4            # Server-side component of the `meteor shell` command
 
 reactive-dict
-accounts-ui
 accounts-password
 practicalmeteor:mocha
 momentjs:moment
 lbee:moment-helpers
 anti:i18n
+accounts-ui

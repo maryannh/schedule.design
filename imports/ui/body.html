@@ -10,10 +10,9 @@
   
     </div>
     <div class="col">
-      
     </div>
     <div class="col">
-       {{#if isOwner}} 
+       {{#if currentUser}} 
         <label class="hide-completed">
         <input type="checkbox" />
         Hide Completed Tasks
@@ -52,5 +51,15 @@
       {{/each}}
     </ul>
   </div>
+     <footer class="footer">
+      <div class="container">
+        <span class="text-muted">&copy; 2017 Mary-Ann Horley. See <a href="tos.html">Terms of Service</a>.</span>
+      </div>
+    </footer>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
 </body>
  
