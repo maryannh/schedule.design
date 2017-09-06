@@ -25,7 +25,7 @@ Meteor.methods({
     if (! Meteor.userId()) {
       throw new Meteor.Error('not-authorized');
     }
- 
+ // below is where I would add tags and dates
     Tasks.insert({
       text,
       createdAt: new Date(),

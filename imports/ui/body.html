@@ -1,18 +1,24 @@
 <body>
-  <div class="container">
+    
+    <div class="container">
+  
     <header>
          <div class="row">
     <div class="col">
+      
       {{> loginButtons}}
+  
     </div>
     <div class="col">
       
     </div>
     <div class="col">
-       <label class="hide-completed">
+       {{#if isOwner}} 
+        <label class="hide-completed">
         <input type="checkbox" />
         Hide Completed Tasks
     </label>
+        {{/if}}
     </div>
   </div>
         
@@ -20,9 +26,17 @@
     
         
    
+       {{#if currentUser}} 
+      <h2 class="page-title">Tasks for {{moFormat moNow 'dddd Do MMMM YYYY'}}</h2>
+      {{/if}}
         
-      <h2>Tasks for {{moFormat moNow 'dddd Do MMMM YYYY'}}</h2>
+        {{#unless currentUser}} 
+     <p><span class="logo">Schedule.design</span> is a Machine Learning-assisted to-do list manager. It will analyse your tasks and generate a list in the order you are most likely to do them in.</p>
         
+        <p><span class="logo">Schedule.design</span> is for you if you love the idea of GTD but don't have time to get your head round Contexts and Priorities.</p>
+        
+        <p>The more you use it, the better it will get!</p>
+        {{/unless}}
         
     {{#if currentUser}}
         <form class="new-task">

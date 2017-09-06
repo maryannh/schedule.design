@@ -1,10 +1,4 @@
-/* CSS declarations go here */
-
-html {
- 
-    
-}
-
+/* GENERAL */
 body {
   line-height: 1.45;
   padding: 1em;
@@ -12,38 +6,119 @@ body {
     font-weight: 300;
     color: rgba(0,0,0,0.8);
 }
- 
-.container {
 
-}
- 
-header {
-
-}
-
-h1, h2, h3, h4, h5 {
-   font-family: 'Roboto', sans-serif;
+p {
+	font-size: 1.00em;
+	line-height: 1.63em;
+	padding-top: 0.500em;
+	margin-bottom: 1.13em;
 }
 
-h1.logo {
-font-family: 'Roboto Mono', monospace;
-    font-size: 2em;
-}
 
-.logo a:link {
-    color: black;
-}
+
+/* LOGIN */
  
 #login-buttons {
   display: block;
 }
 
+#login-buttons a {
+    text-decoration:none;
+}
+
+#login-buttons a.login-link-text::before {
+    content: "Sign up/"
+}
+
 #login-buttons .login-button, .accounts-dialog .login-button {
    background-color: rgba(0,0,0,0.3);
     border: 1px solid rgba(0,0,0,0.3); 
+        font-family: 'Roboto', sans-serif;
+}
+
+div.login-form label {
     font-family: 'Roboto', sans-serif;
 }
 
+
+div.additional-link-container a {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ADD TASKS */
+
+form {
+  margin-top: 1em;
+    font-size: 1.00em;
+  margin-bottom: -1em;
+  position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.new-task input {
+  box-sizing: border-box;
+  padding: 0.5em;
+  border: none;
+  width: 100%;
+  padding-right: 80px;
+    background-color: rgba(0,0,0,0.1);
+  font-size: 2em;
+ margin-bottom: 1.13em;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.new-task input:focus{
+  outline: 0;
+}
+
+/* SHOW TASKS */
+ 
+.delete {
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+    margin-right: 0.25em;
+}
+ 
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.50em;
+}
+ 
+li .text {
+  margin-left: 0.5em;
+}
+
+/* COMPLETE TASKS */
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+header .hide-completed {
+  float: right;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hide-completed input[type=checkbox] {
+            vertical-align: top;
+    margin-top: 0.2em;
+}
+
+input.toggle-checked[type=checkbox] {
+    vertical-align: top;
+    margin-top: 0.5em;
+}
+
+/* HEADERS */
+ 
+
+h1, h2, h3, h4, h5 {
+   font-family: 'Roboto', sans-serif;
+}
 
 h1 {
 	font-size: 5.06em;
@@ -75,75 +150,23 @@ h4 {
 	margin-bottom: 0.875em;
 }
 
-p {
-	font-size: 1.00em;
-	line-height: 1.63em;
-	padding-top: 0.500em;
-	margin-bottom: 1.13em;
+h1.logo {
+font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
 }
 
- 
-
-form {
-  margin-top: 1em;
-    font-size: 1.00em;
-  margin-bottom: -1em;
-  position: relative;
-    font-family: 'Roboto', sans-serif;
-}
- 
-.new-task input {
-  box-sizing: border-box;
-  padding: 0.5em;
-  border: none;
-  width: 100%;
-  padding-right: 80px;
-    background-color: rgba(0,0,0,0.1);
-  font-size: 2em;
- margin-bottom: 1.13em;
-    font-family: 'Roboto', sans-serif;
-}
- 
-.new-task input:focus{
-  outline: 0;
-}
- 
-ul {
-}
- 
-.delete {
-  font-weight: bold;
-  background: none;
-  font-size: 1em;
-  border: none;
-  position: relative;
-    margin-right: 0.25em;
-}
- 
-li {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.50em;
-}
- 
-li .text {
-  margin-left: 0.5em;
-}
- 
-li.checked .text {
-  text-decoration: line-through;
-}
- 
-header .hide-completed {
-  float: right;
-    font-family: 'Roboto', sans-serif;
+span.logo {font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
 }
 
-.hide-completed input[type=checkbox] {
-            vertical-align: top;
-    margin-top: 0.2em;
+.logo a:link {
+    color: black;
 }
 
-input.toggle-checked[type=checkbox] {
-    vertical-align: top;
-    margin-top: 0.5em;
+h2.page-title {
+	font-size: 3.38em;
+	line-height: 1.44em;
+	padding-top: 0.389em;
+	margin-bottom: 0.0926em;
+    font-family: 'Roboto', sans-serif;
 }
